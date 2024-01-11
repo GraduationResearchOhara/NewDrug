@@ -73,7 +73,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="23dp"
         android:layout_marginBottom="151dp"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:text="次へ"
         android:textSize="20dp" />
 
@@ -83,7 +83,7 @@
         android:layout_height="73dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="151dp"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:text="戻る"
         android:textSize="20dp" />
 

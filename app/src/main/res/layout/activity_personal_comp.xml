@@ -29,7 +29,7 @@
         android:layout_height="80dp"
         android:layout_below="@id/changeText"
         android:layout_marginTop="136dp"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:layout_centerHorizontal="true"
         android:text="個人情報に戻る"
         android:textSize="20dp" />

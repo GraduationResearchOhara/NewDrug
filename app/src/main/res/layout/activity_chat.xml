@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
         android:text="薬について"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:textSize="28sp"
         tools:ignore="MissingConstraints" />
 
@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="224dp"
         android:text="病院について"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:textSize="28sp"
         tools:ignore="MissingConstraints" />
 

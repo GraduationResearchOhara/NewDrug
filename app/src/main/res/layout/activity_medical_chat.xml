@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:text="送信"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

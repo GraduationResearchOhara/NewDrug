@@ -48,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         android:text="確定"
-        android:backgroundTint="#F48E27"
+        android:backgroundTint="#ADD8E6"
         android:textSize="20dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
