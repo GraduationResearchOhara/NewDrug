@@ -53,8 +53,5 @@ public class NormalActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        TextView textView = findViewById(R.id.textView);
-        textView.setText("判定が成功しました！");
     }
 }
