@@ -1,6 +1,7 @@
 package com.example.newdrug;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
@@ -29,18 +30,18 @@ public class CameraX extends  AppCompatActivity{
     private int REQUEST_CODE_PERMISSIONS = 1001;
     private final String [] REQUIRED_PERMISSIONS = new String []{Manifest.permission.CAMERA};
 
-    private ImageButton imageButton;
+//    private ImageButton imageButton;
 
     PreviewView mPreviewView;
     TextView tvResults;
     Classifier classifier;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
+
 // 戻るボタン
 //        imageButton = findViewById(R.id.ImageButton);
 //        +
@@ -53,7 +54,6 @@ public class CameraX extends  AppCompatActivity{
 //                                          }
 //                                      });
 //
-
         mPreviewView = findViewById(R.id.viewFinder);
         tvResults = findViewById(R.id.tvResults);
 
@@ -95,9 +95,9 @@ public class CameraX extends  AppCompatActivity{
         CameraSelector cameraSelector = new CameraSelector.Builder().requireLensFacing(
                 CameraSelector.LENS_FACING_BACK).build();
         ImageAnalysis imageAnalysis =
-                new ImageAnalysis.Builder()
-                        .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
-                        .build();
+                        new ImageAnalysis.Builder()
+                                .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+                                .build();
 
         imageAnalysis.setAnalyzer(ActivityCompat.getMainExecutor(this),
                 new ImageAnalysis.Analyzer() {
@@ -107,6 +107,30 @@ public class CameraX extends  AppCompatActivity{
                         result = classifier.classify(image);
                         tvResults.setText(result);
                         image.close();
+                    }
+                });
+        imageAnalysis.setAnalyzer(ActivityCompat.getMainExecutor(this),
+                new ImageAnalysis.Analyzer() {
+                    @Override
+                    public void analyze(@NonNull ImageProxy image) {
+                        String result = classifier.classify(image);
+                        image.close();
+
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                tvResults.setText(result);
+                                // 結果からlabel名を取得
+                                String labelName = result.split(" ")[0]; // 空白で分割し、最初の要素を取得
+
+                                // label名が 'normal' であるかどうかをチェック
+                                if ("normal:".equals(labelName)) {
+                                    // 'normal' であれば、新しいアクティビティに遷移する
+                                    Intent intent = new Intent(CameraX.this, NormalActivity.class);
+                                    startActivity(intent);
+                                }
+                            }
+                        });
                     }
                 });
         Camera camera = cameraProvider.bindToLifecycle(this, cameraSelector,

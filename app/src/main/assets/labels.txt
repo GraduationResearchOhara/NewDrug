@@ -1,2 +1,2 @@
-0 swallow
-1 normal
+swallow
+normal
