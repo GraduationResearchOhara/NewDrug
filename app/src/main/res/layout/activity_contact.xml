@@ -9,40 +9,39 @@
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="お薬飲めたね"
-        android:textSize="40sp"
-
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="108dp"
+        android:text="連絡事項"
+        android:textSize="32sp"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/noticeButton"
-        android:layout_width="169dp"
-        android:layout_height="73dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/welcomeText"
-        android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="#ADD8E6"
         android:text="お知らせ" />
 
     <Button
         android:id="@+id/mailButton"
-        android:layout_width="169dp"
-        android:layout_height="73dp"
-        android:layout_below="@id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticeButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="144dp"
         android:backgroundTint="#ADD8E6"
-        android:text="メ ー ル"
-        android:textSize="24sp" />
+        android:text="メ ー ル" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="379dp"
-        android:layout_height="65dp"
-        android:layout_below="@+id/welcomeText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu" />
 </RelativeLayout>
 
