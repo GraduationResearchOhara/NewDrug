@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/top_image">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="お薬飲めたね"
+        android:textSize="40sp"
+
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/noticeButton"
+        android:layout_width="169dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/welcomeText"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:backgroundTint="#F48E27"
+        android:text="お知らせ" />
+
+    <Button
+        android:id="@+id/mailButton"
+        android:layout_width="169dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="#F48E27"
+        android:text="メ ー ル"
+        android:textSize="24sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="379dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>
+

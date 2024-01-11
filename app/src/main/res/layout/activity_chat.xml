@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/top_image">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="お薬飲めたね"
+        android:textSize="40sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/chemistChatButton"
+        android:layout_width="234dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:text="薬について"
+        android:backgroundTint="#F48E27"
+        android:textSize="28sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/medicalChatButton"
+        android:layout_width="234dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224dp"
+        android:text="病院について"
+        android:backgroundTint="#F48E27"
+        android:textSize="28sp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="379dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

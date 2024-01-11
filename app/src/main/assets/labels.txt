@@ -1,0 +1,2 @@
+0 swallow
+1 normal

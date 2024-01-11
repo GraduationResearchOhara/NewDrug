@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/top_image">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="お薬飲めたね"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/LoginCompText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="97dp"
+        android:layout_centerHorizontal="true"
+        android:text="ログイン完了"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/homeBackButton"
+        android:layout_width="169dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/LoginCompText"
+        android:layout_marginTop="106dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F48E27"
+        android:text="ホームに進む" />
+</RelativeLayout>

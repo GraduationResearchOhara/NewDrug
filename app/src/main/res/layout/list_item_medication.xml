@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/medicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="薬の名前"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/medicationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/medicationName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:text="投与時間"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/medicationNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/medicationTime"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:text="備考"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

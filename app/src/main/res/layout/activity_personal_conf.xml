@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/top_image">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="確認画面"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/ImageButton"
+        android:layout_width="36dp"
+        android:layout_height="47dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="ImageButton"
+        android:src="@drawable/baseline_reply_24" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="25dp"
+        android:text="メールアドレス:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="25dp"
+        android:text="パスワード:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/confButton"
+        android:layout_width="169dp"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="確定"
+        android:backgroundTint="#F48E27"
+        android:textSize="20dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="379dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
