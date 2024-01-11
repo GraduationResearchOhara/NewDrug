@@ -3,10 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@drawable/top_image"> <!-- Set the background here -->
-
-    <!-- 「お薬飲めたね」の文字を太字に変更 -->
+    android:padding="16dp">
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -14,13 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="お薬飲めたね"
-        android:textSize="40sp"
-       />
-
-    <!-- 利用者アカウントメッセージ -->
-
-    <!-- ログインボタン -->
-
+        android:textSize="40sp" />
     <TextView
         android:id="@+id/accountText"
         android:layout_width="wrap_content"
