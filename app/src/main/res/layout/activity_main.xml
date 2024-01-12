@@ -35,14 +35,14 @@
     <Button
         android:id="@+id/confButton"
         android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/welcomeText"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="520dp"
-        android:layout_marginBottom="80dp"
-        android:text="服用率の確認"
-        android:textSize="16sp" />
+        android:layout_marginTop="540dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#ADD8E6"
+        android:text="服用率の確認" />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
