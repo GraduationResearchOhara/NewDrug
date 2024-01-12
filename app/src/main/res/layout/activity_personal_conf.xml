@@ -13,7 +13,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="108dp"
         android:text="確認画面"
-        android:textSize="40sp" />
+        android:textSize="32sp" />
 
     <ImageButton
         android:id="@+id/ImageButton"
@@ -29,37 +29,34 @@
         android:id="@+id/EmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="25dp"
-        android:text="メールアドレス:"
-        android:textSize="20sp" />
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/welcomeText"
+        android:text="メール:" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="25dp"
-        android:text="パスワード:"
-        android:textSize="20sp" />
+        android:layout_below="@+id/EmailAddress"
+        android:layout_marginTop="32dp"        android:layout_marginBottom="25dp"
+        android:text="パスワード:" />
 
     <Button
         android:id="@+id/confButton"
-        android:layout_width="169dp"
-        android:layout_height="73dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_below="@id/Password"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="32dp"
         android:text="確定"
-        android:backgroundTint="#ADD8E6"
-        android:textSize="20dp" />
+        android:backgroundTint="#ADD8E6" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="379dp"
-        android:layout_height="65dp"
-        android:layout_below="@+id/welcomeText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>
