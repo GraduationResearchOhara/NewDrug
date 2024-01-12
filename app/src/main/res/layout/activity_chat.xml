@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/welcomeText"
@@ -13,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="108dp"
-        android:text="お薬飲めたね"
+        android:text="チャット"
         android:textSize="32sp"
         tools:ignore="MissingConstraints" />
 
