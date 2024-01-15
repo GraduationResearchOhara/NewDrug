@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/DateOfBirth"
         android:layout_marginTop="25dp"
-        android:hint="メール"
+        android:hint="メールアドレス："
         android:inputType="textEmailAddress"
         android:textColor="#000000"
     android:textSize="20sp" />
@@ -54,16 +54,6 @@
         android:hint="パスワード:"
         android:inputType="textPassword"
         android:textColor="#000000"
-    android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/medicine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Password"
-        android:layout_marginTop="25dp"
-        android:hint="現在服薬中の薬:"
-        android:inputType="text"
         android:textSize="20sp" />
 
     <Button
