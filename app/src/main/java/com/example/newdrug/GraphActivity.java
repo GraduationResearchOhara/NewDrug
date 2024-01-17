@@ -44,7 +44,7 @@ public class GraphActivity extends AppCompatActivity {
 
                 if (itemId == R.id.navigation_chat) {
                     // チャット画面に遷移
-                    Intent intent1 = new Intent(GraphActivity.this, Chat.class);
+                    Intent intent1 = new Intent(GraphActivity.this, ChatActivity.class);
                     startActivity(intent1);
                     return true;
                 } else if (itemId == R.id.navigation_book) {

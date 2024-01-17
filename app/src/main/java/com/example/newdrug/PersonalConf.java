@@ -28,7 +28,7 @@ public class PersonalConf extends AppCompatActivity {
 
                 if (itemId == R.id.navigation_chat) {
                     // チャット画面に遷移
-                    Intent intent1 = new Intent(PersonalConf.this, Chat.class);
+                    Intent intent1 = new Intent(PersonalConf.this, ChatActivity.class);
                     startActivity(intent1);
                     return true;
                 } else if (itemId == R.id.navigation_book) {

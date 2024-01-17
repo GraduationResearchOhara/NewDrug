@@ -34,7 +34,7 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat2);
+        setContentView(R.layout.activity_chat);
 
         messageEditText = findViewById(R.id.messageEditText);
         sendButton = findViewById(R.id.sendButton);
@@ -112,10 +112,6 @@ public class ChatActivity extends AppCompatActivity {
     public static class Message {
         private String username;
         private String text;
-
-        public Message() {
-            // Firebase用のデフォルトコンストラクタ
-        }
 
         public Message(String username, String text) {
             this.username = username;

@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="108dp"
-        android:text="チャット"
-        android:textSize="32sp"
-        tools:ignore="MissingConstraints" />
+    <!-- メッセージ入力用のEditText -->
+    <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="266dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:hint="メッセージを入力"
+            android:inputType="textMultiLine"/>
 
+        <!-- 送信ボタン -->
     <Button
-        android:id="@+id/chemistChatButton"
+        android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="64dp"
-        android:text="薬について"
+        android:layout_alignEnd="@+id/messageEditText"
+        android:layout_marginEnd="-112dp"
         android:backgroundTint="#ADD8E6"
-        tools:ignore="MissingConstraints" />
+        android:text="送信"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/medicalChatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/chemistChatButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="144dp"
-        android:text="病院について"
-        android:backgroundTint="#ADD8E6"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+    <ListView
+        android:id="@+id/chatListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_height="646dp"
+        android:layout_alignBottom="@+id/messageEditText"
+        android:layout_marginBottom="-680dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageEditText" />
 
 </RelativeLayout>

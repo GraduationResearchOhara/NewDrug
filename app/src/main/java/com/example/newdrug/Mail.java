@@ -29,7 +29,7 @@ public class Mail extends AppCompatActivity {
 
                 if (itemId == R.id.navigation_chat) {
                     // チャット画面に遷移
-                    Intent intent1 = new Intent(Mail.this, Chat.class);
+                    Intent intent1 = new Intent(Mail.this, ChatActivity.class);
                     startActivity(intent1);
                     return true;
                 } else if (itemId == R.id.navigation_book) {
