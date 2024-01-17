@@ -29,7 +29,7 @@ public class Home extends AppCompatActivity {
 
                 if (itemId == R.id.navigation_chat) {
                     // チャット画面に遷移
-                    Intent intent1 = new Intent(Home.this, Chat.class);
+                    Intent intent1 = new Intent(Home.this, ChatActivity.class);
                     startActivity(intent1);
                     return true;
                 } else if (itemId == R.id.navigation_book) {
@@ -65,6 +65,15 @@ public class Home extends AppCompatActivity {
                 Log.d("PhotoButton", "写真ボタンがクリックされました"); // ログにメッセージを表示
                 Intent intent = new Intent(Home.this, CameraX.class);
                 startActivity(intent); // ページ遷移
+            }
+        });
+        Button chatButton = findViewById(R.id.chatButton);
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // chat intent
+                Intent intent = new Intent(Home.this, ChatActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -21,6 +21,12 @@
         android:theme="@style/Theme.NewDrug"
         tools:targetApi="31">
         <activity
+            android:name=".PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".NormalActivity"
             android:exported="false" />
         <activity
@@ -66,15 +72,6 @@
             android:name=".PersonalInformation"
             android:exported="false" />
         <activity
-            android:name=".Medication"
-            android:exported="false" />
-        <activity
-            android:name=".MedicationAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".MedicationDetailActivity"
-            android:exported="false" />
-        <activity
             android:name=".Contact"
             android:exported="false" />
         <activity
@@ -98,7 +95,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraX"></activity>
+        <activity android:name=".CameraX" />
     </application>
 
 </manifest>

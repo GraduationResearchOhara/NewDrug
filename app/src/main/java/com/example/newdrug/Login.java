@@ -36,40 +36,40 @@ public class Login extends AppCompatActivity {
             String emailText = email.getText().toString();
             String passwordText = password.getText().toString();
 
-//            if (emailText.isEmpty() || passwordText.isEmpty()) {
-//                // ユーザーにエラーメッセージを表示
-//                Toast.makeText(Login.this, "Emailとパスワードは必須項目です", Toast.LENGTH_SHORT).show();
-//            } else {
-//                mAuth.signInWithEmailAndPassword(emailText, passwordText)
-//                        .addOnCompleteListener(this, task -> {
-//                            if (task.isSuccessful()) {
+            if (emailText.isEmpty() || passwordText.isEmpty()) {
+                // ユーザーにエラーメッセージを表示
+                Toast.makeText(Login.this, "Emailとパスワードは必須項目です", Toast.LENGTH_SHORT).show();
+            } else {
+                mAuth.signInWithEmailAndPassword(emailText, passwordText)
+                        .addOnCompleteListener(this, task -> {
+                            if (task.isSuccessful()) {
                                 // ログイン成功
                                 FirebaseUser user = mAuth.getCurrentUser();
-//                                if (user != null) {
-//                                    // ユーザー情報をFirebase Realtime Databaseに保存
-//                                    DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference("users");
-//                                    databaseRef.child(user.getUid()).child("email").setValue(user.getEmail());
-//                                    // 他のユーザー情報も必要に応じて保存
-//                                }
+                                if (user != null) {
+                                    // ユーザー情報をFirebase Realtime Databaseに保存
+                                    DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference("users");
+                                    databaseRef.child(user.getUid()).child("email").setValue(user.getEmail());
+                                    // 他のユーザー情報も必要に応じて保存
+                                }
 
-                                // MemoListActivityに画面遷移
+//                                 LoginCompActivityに画面遷移
                                 Intent intent = new Intent(Login.this, LoginComp.class);
                                 startActivity(intent);
                                 finish();
-//                            } else {
-                                // ログインエラー処理
-//                                String errorMessage = "ログインに失敗しました";
-//                                Exception exception = task.getException();
+                            } else {
+//                                 ログインエラー処理
+                                String errorMessage = "ログインに失敗しました";
+                                Exception exception = task.getException();
 
-//                                if (exception != null) {
-//                                    errorMessage = exception.getLocalizedMessage();
-//                                }
+                                if (exception != null) {
+                                    errorMessage = exception.getLocalizedMessage();
+                                }
 
-//                                Log.e("LoginActivity", "ログインエラー: " + errorMessage);
-//                                Toast.makeText(Login.this, errorMessage, Toast.LENGTH_SHORT).show();
-//                            }
-//                        });
-//            }
+                                Log.e("LoginActivity", "ログインエラー: " + errorMessage);
+                                Toast.makeText(Login.this, errorMessage, Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            }
         });
     }
 }

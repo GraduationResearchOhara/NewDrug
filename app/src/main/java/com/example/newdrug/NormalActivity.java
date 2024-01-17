@@ -1,3 +1,5 @@
+//CameraXでの判定が成功した先
+
 package com.example.newdrug;
 
 import android.content.Intent;

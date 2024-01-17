@@ -5,14 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:scaleType="fitXY"-->
-<!--        android:src="@drawable/top_image"-->
-<!--        tools:ignore="ContentDescription" />-->
-
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -34,6 +26,17 @@
         android:layout_marginTop="64dp"
         android:backgroundTint="#ADD8E6"
         android:text="写真"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhotoButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#ADD8E6"
+        android:text="chat"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
