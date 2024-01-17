@@ -21,9 +21,6 @@
         android:theme="@style/Theme.NewDrug"
         tools:targetApi="31">
         <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
             android:name=".NormalActivity"
             android:exported="false" />
         <activity
@@ -63,13 +60,16 @@
             android:name=".Contact"
             android:exported="false" />
         <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".LoginComp"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Login"

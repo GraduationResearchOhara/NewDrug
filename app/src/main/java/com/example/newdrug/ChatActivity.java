@@ -51,7 +51,7 @@ public class ChatActivity extends AppCompatActivity {
                 String message = messageEditText.getText().toString().trim();
                 if (!message.isEmpty()) {
                     // 新しいメッセージをチャット履歴に追加
-                    chatMessages.add("user1: " + message);
+//                    chatMessages.add("user1: " + message);
                     chatAdapter.notifyDataSetChanged();
 
                     sendMessage();
@@ -83,6 +83,8 @@ public class ChatActivity extends AppCompatActivity {
                 Message newMessage = dataSnapshot.getValue(Message.class);
                 chatMessages.add(newMessage.getUsername() + ": " + newMessage.getText());
                 chatAdapter.notifyDataSetChanged();
+
+                chatListView.setSelection(chatMessages.size() - 1);
             }
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
@@ -112,6 +114,12 @@ public class ChatActivity extends AppCompatActivity {
     public static class Message {
         private String username;
         private String text;
+
+        // 引数なしのコンストラクタを追加
+        //必要
+        public Message() {
+            // デフォルトコンストラクタ（Firebase用）
+        }
 
         public Message(String username, String text) {
             this.username = username;

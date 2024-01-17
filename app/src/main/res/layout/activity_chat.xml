@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/mainback2">
 
     <!-- メッセージ入力用のEditText -->
     <EditText
-            android:id="@+id/messageEditText"
-            android:layout_width="266dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginEnd="14dp"
-            android:hint="メッセージを入力"
-            android:inputType="textMultiLine"/>
+        android:id="@+id/messageEditText"
+        android:layout_width="266dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:hint="メッセージを入力"
+        android:inputType="textMultiLine" />
 
-        <!-- 送信ボタン -->
+    <!-- 送信ボタン -->
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
@@ -29,14 +30,17 @@
     <ListView
         android:id="@+id/chatListView"
         android:layout_width="match_parent"
-        android:layout_height="646dp"
+        android:layout_height="418dp"
         android:layout_alignBottom="@+id/messageEditText"
-        android:layout_marginBottom="-680dp"
+        android:layout_marginBottom="-440dp"
         android:divider="@android:color/darker_gray"
+        android:background="@color/white"
         android:dividerHeight="1dp"
+        android:stackFromBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/messageEditText" />
+
 
 </RelativeLayout>

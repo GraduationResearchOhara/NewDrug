@@ -27,7 +27,7 @@
         android:id="@+id/tvResults"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/mainback2"
         android:foregroundTint="@color/white"
         android:textColor="#0C0C0C"
         android:textColorHint="#0E0C0C"

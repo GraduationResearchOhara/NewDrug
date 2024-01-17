@@ -1,6 +1,7 @@
 package com.example.newdrug;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -67,15 +68,15 @@ public class Home extends AppCompatActivity {
                 startActivity(intent); // ページ遷移
             }
         });
-        Button chatButton = findViewById(R.id.chatButton);
-        chatButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // chat intent
-                Intent intent = new Intent(Home.this, ChatActivity.class);
-                startActivity(intent);
-            }
-        });
+//        Button chatButton = findViewById(R.id.chatButton);
+//        chatButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // chat intent
+//                Intent intent = new Intent(Home.this, ChatActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }
