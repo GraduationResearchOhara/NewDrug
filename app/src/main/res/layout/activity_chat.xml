@@ -30,11 +30,10 @@
     <ListView
         android:id="@+id/chatListView"
         android:layout_width="match_parent"
-        android:layout_height="418dp"
+        android:layout_height="424dp"
         android:layout_alignBottom="@+id/messageEditText"
         android:layout_marginBottom="-440dp"
         android:divider="@android:color/darker_gray"
-        android:background="@color/white"
         android:dividerHeight="1dp"
         android:stackFromBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"

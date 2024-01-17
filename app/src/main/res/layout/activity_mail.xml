@@ -8,7 +8,8 @@
     <ListView
         android:id="@+id/mailListView"
         android:layout_width="match_parent"
-        android:layout_height="545dp"
+        android:layout_height="652dp"
+        android:background="@drawable/listback"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
 

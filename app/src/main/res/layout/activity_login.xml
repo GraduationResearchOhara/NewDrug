@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/welcomeText"
         android:layout_marginTop="32dp"
-        android:hint="メールアドレス："
+        android:hint="メールアドレス"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
         android:layout_marginTop="32dp"
-        android:hint="パスワード　　："
+        android:hint="パスワード"
         android:inputType="textPassword" />
 
     <Button
