@@ -22,7 +22,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         // ボトムナビゲーションバーの初期設定
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

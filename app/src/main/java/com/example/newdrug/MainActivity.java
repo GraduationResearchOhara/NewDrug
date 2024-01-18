@@ -1,5 +1,6 @@
-package com.example.newdrug;
+// 薬一覧
 
+package com.example.newdrug;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

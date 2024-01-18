@@ -1,3 +1,6 @@
+//モデルの作成やコードで問題があり、光の明暗の判定しかできない
+//今後の展墓として、薬を飲む動作の判定ができるモデルの作成やコードの修正を行いたい
+
 package com.example.newdrug;
 
 import android.Manifest;
@@ -44,18 +47,6 @@ public class CameraX extends  AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
 
-// 戻るボタン
-//        imageButton = findViewById(R.id.ImageButton);
-//        +
-//        ImageButton backButton = findViewById(R.id.ImageButton); // R.id.backButtonはXMLで戻るボタンに割り当てたID
-//        backButton.setOnClickListener(new View.OnClickListener() {
-//                                          @Override
-//                                          public void onClick(View v) {
-//                                              // 戻るボタンがクリックされたときの処理
-//                                              finish(); // アクティビティを終了して前の画面に戻る
-//                                          }
-//                                      });
-//
         mPreviewView = findViewById(R.id.viewFinder);
         tvResults = findViewById(R.id.tvResults);
 

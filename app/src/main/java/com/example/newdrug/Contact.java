@@ -20,7 +20,7 @@ public class Contact extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
 
         // ボトムナビゲーションバーの初期設定
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -58,7 +58,7 @@ public class Contact extends AppCompatActivity {
         });
 
         // メールボタンの処理
-        Button mailButton = findViewById(R.id.mailButton);
+        Button mailButton = findViewById(R.id.MailButton);
         mailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,7 @@ public class Contact extends AppCompatActivity {
         });
 
 //        // お知らせボタンの処理
-        Button noticeButton = findViewById(R.id.noticeButton);
+        Button noticeButton = findViewById(R.id.NoticeButton);
         noticeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

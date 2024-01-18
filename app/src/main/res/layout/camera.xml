@@ -14,20 +14,13 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="133dp">
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/ImageButton"-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="48dp"-->
-<!--            android:background="@android:color/white"-->
-<!--            android:contentDescription="ImageButton"-->
-<!--            android:src="@drawable/baseline_reply_24"/>-->
     </androidx.camera.view.PreviewView>
 
     <TextView
         android:id="@+id/tvResults"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@drawable/mainback2"
+        android:background="@color/white"
         android:foregroundTint="@color/white"
         android:textColor="#0C0C0C"
         android:textColorHint="#0E0C0C"
