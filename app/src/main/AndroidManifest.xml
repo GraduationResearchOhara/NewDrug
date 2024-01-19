@@ -60,6 +60,7 @@
             android:name=".ChatActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="false" />
+        <!--チャットでキーボードを表示した際にbnavをせり上げないように-->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
