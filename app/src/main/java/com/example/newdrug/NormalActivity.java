@@ -43,7 +43,7 @@ public class NormalActivity extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_person) {
                     // 個人情報に遷移
-                    Intent intent4 = new Intent(NormalActivity.this, PersonalInformation.class);
+                    Intent intent4 = new Intent(NormalActivity.this, AccountManagementActivity.class);
                     startActivity(intent4);
                     return true;
                 } else if (itemId == R.id.navigation_home) {

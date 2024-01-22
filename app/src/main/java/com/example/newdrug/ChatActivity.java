@@ -64,7 +64,7 @@ public class ChatActivity extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_person) {
                     // 個人情報に遷移
-                    Intent intent4 = new Intent(ChatActivity.this, PersonalInformation.class);
+                    Intent intent4 = new Intent(ChatActivity.this, AccountManagementActivity.class);
                     startActivity(intent4);
                     return true;
                 }

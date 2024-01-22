@@ -33,7 +33,7 @@
     <ListView
         android:id="@+id/chatListView"
         android:layout_width="410dp"
-        android:layout_height="353dp"
+        android:layout_height="431dp"
         android:layout_alignBottom="@+id/messageEditText"
         android:layout_marginBottom="-440dp"
         android:divider="@android:color/darker_gray"
@@ -41,9 +41,10 @@
         android:stackFromBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/messageEditText"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

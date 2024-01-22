@@ -43,7 +43,7 @@ public class Contact extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_person) {
                     // 個人情報に遷移
-                    Intent intent4 = new Intent(Contact.this, PersonalInformation.class);
+                    Intent intent4 = new Intent(Contact.this, AccountManagementActivity.class);
                     startActivity(intent4);
                     return true;
                 }
