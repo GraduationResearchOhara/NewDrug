@@ -39,12 +39,13 @@
         android:layout_height="50dp"
         android:layout_below="@id/Patient"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="300dp"
         android:backgroundTint="#ADD8E6"
         android:text="関係者一覧"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Patient" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
