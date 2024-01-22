@@ -30,19 +30,32 @@
         app:layout_constraintTop_toBottomOf="@+id/Logout" />
 
 
-    <Button
+
+
+    <!-- "Learning" テキスト -->
+
+    <ImageButton
         android:id="@+id/PhotoButton"
+        android:layout_width="162dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="500dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/learningText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="556dp"
-        android:backgroundTint="#ADD8E6"
-        android:text="写真"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="1dp"
+        android:text="Learning"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@id/PhotoButton"
+        app:layout_constraintStart_toStartOf="@id/PhotoButton"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoButton" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

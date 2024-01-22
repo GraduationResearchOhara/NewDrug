@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -58,7 +59,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        Button photoButton = findViewById(R.id.PhotoButton); // 写真ボタンを取得
+        ImageButton photoButton = findViewById(R.id.PhotoButton); // 写真ボタンを取得
         // 写真ボタンが押されたときの処理
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
