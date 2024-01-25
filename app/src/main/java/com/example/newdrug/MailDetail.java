@@ -1,10 +1,16 @@
 package com.example.newdrug;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageButton;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MailDetail extends AppCompatActivity {
@@ -17,6 +23,43 @@ public class MailDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mail_detail);
+
+        // ボトムナビゲーションバーの初期設定
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId(); // メニューアイテムのIDを取得
+
+                if (itemId == R.id.navigation_chat) {
+                    // チャット画面に遷移
+                    Intent intent1 = new Intent(MailDetail.this, ChatActivity.class);
+                    startActivity(intent1);
+                    return true;
+                } else if (itemId == R.id.navigation_book) {
+                    // お薬手帳に遷移
+                    Intent intent2 = new Intent(MailDetail.this, MainActivity.class);
+                    startActivity(intent2);
+                    return true;
+                } else if (itemId == R.id.navigation_contact) {
+                    // 連絡に遷移
+                    Intent intent3 = new Intent(MailDetail.this, Contact.class);
+                    startActivity(intent3);
+                    return true;
+                } else if (itemId == R.id.navigation_person) {
+                    // 個人情報に遷移
+                    Intent intent4 = new Intent(MailDetail.this, AccountManagementActivity.class);
+                    startActivity(intent4);
+                    return true;
+                } else if (itemId == R.id.navigation_home) {
+                    // Home画面に遷移
+                    Intent intentHome = new Intent(MailDetail.this, Home.class);
+                    startActivity(intentHome);
+                    return true;
+                }
+                return false;
+            }
+        });
 
         // 選択したメールアイテムを受け取る
         MailItem mailItem = getIntent().getParcelableExtra(EXTRA_MAIL_ITEM);
