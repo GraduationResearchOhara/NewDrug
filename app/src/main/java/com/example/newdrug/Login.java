@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity {
                                 }
 
 //                                 LoginCompActivityに画面遷移
-                                Intent intent = new Intent(Login.this, LoginComp.class);
+                                Intent intent = new Intent(Login.this, Home.class);
                                 startActivity(intent);
                                 finish();
                             } else {

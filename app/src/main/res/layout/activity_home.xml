@@ -5,32 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <!-- ログアウトボタン -->
-    <Button
-        android:id="@+id/Logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#ADD8E6"
-        android:text="ログアウト"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- 画像 -->
-    <ImageView
-        android:id="@+id/icIcon"
-        android:layout_width="407dp"
-        android:layout_height="379dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/ic_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logout" />
 
 
     <!-- "Learning" テキスト -->
+
+    <ImageView
+        android:id="@+id/icIcon"
+        android:layout_width="412dp"
+        android:layout_height="373dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/ic_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/PhotoButton"
