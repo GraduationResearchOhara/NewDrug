@@ -55,6 +55,11 @@ public class Manual extends AppCompatActivity {
                 // NoticeActivityに移動
                 startActivity(new Intent(Manual.this, Contact.class));
                 return true;
+            }else if (itemId == R.id.navigation_home) {
+                // homeに遷移
+                Intent intent5 = new Intent(Manual.this, Home.class);
+                startActivity(intent5);
+                return true;
             }
             return false;
         });
