@@ -65,7 +65,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("PhotoButton", "写真ボタンがクリックされました"); // ログにメッセージを表示
-                Intent intent = new Intent(Home.this, CameraX.class);
+                Intent intent = new Intent(Home.this, CameraActivity.class);
                 startActivity(intent); // ページ遷移
             }
         });

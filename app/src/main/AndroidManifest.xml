@@ -21,6 +21,9 @@
         android:theme="@style/Theme.NewDrug"
         tools:targetApi="31">
         <activity
+            android:name=".CameraActivity"
+            android:exported="false"/>
+        <activity
             android:name=".SelectMode"
             android:exported="false" />
         <activity
@@ -61,18 +64,6 @@
             android:exported="false" />
         <activity
             android:name=".Notice"
-            android:exported="false" />
-        <activity
-            android:name=".PersonalComp"
-            android:exported="false" />
-        <activity
-            android:name=".PersonalConf"
-            android:exported="false" />
-        <activity
-            android:name=".PersonalEdit"
-            android:exported="false" />
-        <activity
-            android:name=".PersonalInformation"
             android:exported="false" />
         <activity
             android:name=".Contact"

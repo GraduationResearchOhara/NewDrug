@@ -45,7 +45,7 @@ public class Notice extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_person) {
                     // 個人情報に遷移
-                    Intent intent4 = new Intent(Notice.this, PersonalInformation.class);
+                    Intent intent4 = new Intent(Notice.this, PatientActivity.class);
                     startActivity(intent4);
                     return true;
                 }else if (itemId == R.id.navigation_home) {

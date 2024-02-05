@@ -44,7 +44,7 @@ public class Mail extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_person) {
                     // 個人情報に遷移
-                    Intent intent4 = new Intent(Mail.this, PersonalInformation.class);
+                    Intent intent4 = new Intent(Mail.this, PatientActivity.class);
                     startActivity(intent4);
                     return true;
                 }else if (itemId == R.id.navigation_home) {
