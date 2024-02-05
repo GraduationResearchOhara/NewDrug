@@ -36,7 +36,7 @@ public class Home extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_book) {
                     // お薬手帳に遷移
-                    Intent intent2 = new Intent(Home.this, MainActivity.class);
+                    Intent intent2 = new Intent(Home.this, SelectMode.class);
                     startActivity(intent2);
                     return true;
                 } else if (itemId == R.id.navigation_contact) {
@@ -69,15 +69,6 @@ public class Home extends AppCompatActivity {
                 startActivity(intent); // ページ遷移
             }
         });
-//        Button chatButton = findViewById(R.id.chatButton);
-//        chatButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // chat intent
-//                Intent intent = new Intent(Home.this, ChatActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
     }
 }

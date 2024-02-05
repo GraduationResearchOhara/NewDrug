@@ -38,7 +38,7 @@ public class MailDetail extends AppCompatActivity {
                     return true;
                 } else if (itemId == R.id.navigation_book) {
                     // お薬手帳に遷移
-                    Intent intent2 = new Intent(MailDetail.this, MainActivity.class);
+                    Intent intent2 = new Intent(MailDetail.this, SelectMode.class);
                     startActivity(intent2);
                     return true;
                 } else if (itemId == R.id.navigation_contact) {

@@ -33,7 +33,7 @@ public class AccountManagementActivity extends AppCompatActivity {
                 return true;
             } else if (itemId == R.id.navigation_book) {
                 // MedicineListActivityに移動
-                startActivity(new Intent(AccountManagementActivity.this, MainActivity.class));
+                startActivity(new Intent(AccountManagementActivity.this, SelectMode.class));
                 return true;
             } else if (itemId == R.id.navigation_person) {
                 // PersonalInformationActivityに移動

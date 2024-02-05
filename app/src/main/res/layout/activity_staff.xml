@@ -21,8 +21,8 @@
 
 
     <ScrollView
-        android:layout_width="406dp"
-        android:layout_height="511dp"
+        android:layout_width="410dp"
+        android:layout_height="509dp"
         android:layout_below="@id/titleTextView"
         android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -22,11 +22,11 @@
 
     <TextView
         android:id="@+id/fullNameTextView"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_below="@id/titleTextView"
         android:layout_marginTop="150dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginEnd="70dp"
         android:padding="16dp"
         android:text=""
         android:textSize="18sp"
@@ -34,12 +34,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/hospitalNameTextView"
-        android:layout_width="200dp"
+        android:id="@+id/birthDateTextView"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_below="@id/fullNameTextView"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginEnd="70dp"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+    <TextView
+        android:id="@+id/hospitalNameTextView"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/fullNameTextView"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="70dp"
         android:padding="16dp"
         android:text=""
         android:textSize="18sp"
@@ -48,11 +61,11 @@
 
     <TextView
         android:id="@+id/emailTextView"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_below="@id/hospitalNameTextView"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginEnd="70dp"
         android:padding="16dp"
         android:text=""
         android:textSize="18sp"
@@ -66,7 +79,7 @@
         android:layout_below="@id/titleTextView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="450dp"
         android:backgroundTint="#CD5C5C"
         android:text="一覧に戻る"
         app:layout_constraintEnd_toEndOf="parent"

@@ -28,7 +28,6 @@ public class StaffDetailActivity extends AppCompatActivity {
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference().child("users").child(userId);
 
         // UIのTextView
-        // UIのTextView
         TextView fullNameTextView = findViewById(R.id.fullNameTextView);
         TextView hospitalNameTextView = findViewById(R.id.hospitalNameTextView);
         TextView emailTextView = findViewById(R.id.emailTextView);
@@ -56,13 +55,7 @@ public class StaffDetailActivity extends AppCompatActivity {
             }
         });
 
-//        Button editButton = findViewById(R.id.editButton);
-//        editButton.setOnClickListener(v -> {
-//            // 編集画面に遷移
-//            Intent editIntent = new Intent(StaffDetailActivity.this, StaffEditActivity.class);
-//            editIntent.putExtra("userId", userId);
-//            startActivity(editIntent);
-//        });
+
         Button returnToListButton = findViewById(R.id.listButton);
         returnToListButton.setOnClickListener(v -> {
             // 一覧画面に遷移
@@ -78,7 +71,7 @@ public class StaffDetailActivity extends AppCompatActivity {
                 return true;
             } else if (itemId == R.id.navigation_book) {
                 // MedicineListActivityに移動
-                startActivity(new Intent(StaffDetailActivity.this, MainActivity.class));
+                startActivity(new Intent(StaffDetailActivity.this, SelectMode.class));
                 return true;
             } else if (itemId == R.id.navigation_person) {
                 // PersonalInformationActivityに移動

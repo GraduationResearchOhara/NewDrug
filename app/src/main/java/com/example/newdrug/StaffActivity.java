@@ -24,6 +24,34 @@ public class StaffActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff);
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.navigation_chat) {
+                // チャット画面に遷移
+                Intent intent1 = new Intent(StaffActivity.this, ChatActivity.class);
+                startActivity(intent1);
+                return true;
+            } else if (itemId == R.id.navigation_book) {
+                // MedicineListActivityに移動
+                startActivity(new Intent(StaffActivity.this, SelectMode.class));
+                return true;
+            } else if (itemId == R.id.navigation_person) {
+                // PersonalInformationActivityに移動
+                startActivity(new Intent(StaffActivity.this, AccountManagementActivity.class));
+                return true;
+            } else if (itemId == R.id.navigation_chat) {
+                // ChatActivityに移動
+                startActivity(new Intent(StaffActivity.this, ChatActivity.class));
+                return true;
+            } else if (itemId == R.id.navigation_contact) {
+                // NoticeActivityに移動
+                startActivity(new Intent(StaffActivity.this, Contact.class));
+                return true;
+            }
+            return false;
+        });
+
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("users");
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
@@ -75,30 +103,6 @@ public class StaffActivity extends AppCompatActivity {
             }
         });
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnItemSelectedListener(item -> {
-            int itemId = item.getItemId();
-            if (itemId == R.id.navigation_home) {
-                // ホームアクティビティの処理
-                return true;
-            } else if (itemId == R.id.navigation_book) {
-                // MedicineListActivityに移動
-                startActivity(new Intent(StaffActivity.this, MainActivity.class));
-                return true;
-            } else if (itemId == R.id.navigation_person) {
-                // PersonalInformationActivityに移動
-                startActivity(new Intent(StaffActivity.this, AccountManagementActivity.class));
-                return true;
-            } else if (itemId == R.id.navigation_chat) {
-                // ChatActivityに移動
-                startActivity(new Intent(StaffActivity.this, ChatActivity.class));
-                return true;
-            } else if (itemId == R.id.navigation_contact) {
-                // NoticeActivityに移動
-                startActivity(new Intent(StaffActivity.this, Contact.class));
-                return true;
-            }
-            return false;
-        });
+
     }
 }

@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <!-- 画像 -->
-
-
-    <!-- "Learning" テキスト -->
-
     <ImageView
         android:id="@+id/icIcon"
         android:layout_width="412dp"
