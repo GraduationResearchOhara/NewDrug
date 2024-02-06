@@ -141,6 +141,8 @@ public class CameraActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
+            // 判定するラベル名
+//            String[] classes = {"swallow", "natural"};
             String[] classes = {"handphone", "laptop"};
 
             result.setText(classes[maxPos]);
@@ -156,7 +158,6 @@ public class CameraActivity extends AppCompatActivity {
         } catch (IOException e) {
             // TODO Handle the exception
         }
-
     }
 
     @Override
